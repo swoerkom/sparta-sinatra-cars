@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+  font-family: 'Playfair Display', serif;
+}
+
+label{
+    float: left;
+    clear: left;
+    width: 70px;
+}
+
+input, textarea {
+  display: inline-block;
+  float: left;
+  margin-bottom: 10px;
+}
+
+a {
+  color: red;
+}
