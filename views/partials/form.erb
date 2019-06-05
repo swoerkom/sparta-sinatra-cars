@@ -1,0 +1,28 @@
+<form action="/<%= @post[:id] %>" method="post">
+  <div>
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Enter a car name" value="<%= @post[:title] %>">
+  </div>
+  <div>
+    <label>Body</label>
+    <textarea name="body" rows= "8" cols="80" placeholder="Post car description here"><%= @post[:body] %></textarea>
+  </div>
+  <div>
+    <label>Color</label>
+    <input type="text" name="color" placeholder="Enter a color" value="<%= @post[:color] %>">
+  </div>
+  <div>
+    <label>Engine</label>
+    <input type="text" name="engine" placeholder="Enter engine information" value="<%= @post[:engine] %>">
+  </div>
+  <div>
+    <label>Speed</label>
+    <input type="text" name="speed" placeholder="Enter speed" value="<%= @post[:speed] %>">
+  </div>
+  <div>
+    <input type="submit" value="Save Post">
+  </div>
+  <% if(@post[:id] != "") %>
+    <input type="hidden" name="_method" value="put">
+  <% end %>
+</form>
